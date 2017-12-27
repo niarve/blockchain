@@ -7,7 +7,7 @@ export default class Chain {
     this.chain = [block];
   }
 
-  // section 2 adding new blocks
+  // adding new blocks
   getLatestBlock() {
     return this.chain[this.chain.length - 1];
   }
@@ -16,7 +16,7 @@ export default class Chain {
     this.chain.push(newBlock);
   }
 
-  // section 3 validating the chain
+  // validating the chain
   // TODO: make recursive
   isChainValid() {
     for (let i = 1; i < this.chain.length; i += 1) {
